@@ -131,7 +131,7 @@ body {
   overflow: hidden;
   height: 4rem;
   width: 14rem;
-  background: #fff;
+  background: #FFF200;
 }
 
 #home .content button::before {
@@ -139,7 +139,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: #FFF200;
+  background: #ff002bd3;
   height: 100%;
   width: 0%;
   -webkit-transition: .2s;
@@ -194,6 +194,24 @@ body {
 
 #home .controls .dots:hover {
   background: #fff;
+}
+.pulsate{
+  /*-webkit-*/animation: pulsate 2s ease-in-out;
+  /*-webkit-*/animation-iteration-count:infinite ;
+  opacity: .3;
+  color: black;
+}
+@-webkit-keyframes pulsate{
+  0% {
+      opacity: .3;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: .3;
+  }
+
 }
 
 #special {
